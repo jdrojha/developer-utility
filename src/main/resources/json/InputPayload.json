@@ -1,23 +1,9 @@
-{
-  "id": 1,
-  "name": "Test user",
-  "username": "Bret",
-  "email": "TestUser@gmail.com",
-  "address": {
-    "street": "BLR",
-    "suite": "Test",
-    "city": "Test",
-    "zipcode": "92998-3874",
-    "geo": {
-      "lat": "-37.3159",
-      "lng": "81.1496"
-    }
-  },
-  "phone": "TestPhone",
-  "website": "Test.org",
-  "company": {
-    "name": "Test-Crona",
-    "catchPhrase": "NVREL",
-    "bs": "harness real-time e-markets"
+  {
+    "initialRiskConsequence": "001",
+    "identificationDate" :  "2022-04-22",
+     "cyberRiskType": "2",
+    "riskStatus": "10",
+    "initialRiskLikelihood": "TT",
+    "initialLevelOfEffort": "Medium Size",
+    "nodeName": "aws"
   }
-}

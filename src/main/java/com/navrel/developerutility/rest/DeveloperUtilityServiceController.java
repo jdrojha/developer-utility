@@ -1,5 +1,6 @@
-package com.navrel.developerutility.api;
+package com.navrel.developerutility.rest;
 
+import com.navrel.developerutility.domain.CyberRisk;
 import com.navrel.developerutility.service.UtilityService;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,13 +8,17 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
-@RestControllerAdvice
+@RestController
 @RequestMapping("/api")
-public class UtilityApi {
+public class DeveloperUtilityServiceController {
+
+    Logger logger = LogManager.getLogger(DeveloperUtilityServiceController.class);
 
     @Autowired
     UtilityService utilityService;
@@ -23,10 +28,10 @@ public class UtilityApi {
             @io.swagger.annotations.ApiResponse(code = 401, message = "Due to security constraints, your access request cannot be authorized"),
             @io.swagger.annotations.ApiResponse(code = 500, message = "The server is down. Please bear with us."),
     })
-    @GetMapping("/developer-utility/findAllRecord")
-    public ResponseEntity<List<Object>> getAllRecords () {
-        List<Object> footballers = utilityService.findAllRecords();
-        return new ResponseEntity<>(footballers, HttpStatus.OK);
+    @GetMapping("/developer-utility/cyberRisks")
+    public ResponseEntity<List<CyberRisk>> getAllRecords () {
+        List<CyberRisk> cyberRiskList = utilityService.findCyberRiskAllRecords();
+        return new ResponseEntity<>(cyberRiskList, HttpStatus.OK);
     }
 
 }
