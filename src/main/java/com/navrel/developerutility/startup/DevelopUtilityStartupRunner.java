@@ -19,10 +19,11 @@ public class DevelopUtilityStartupRunner implements ApplicationRunner {
     @Autowired
     UtilityService utilityService;
 
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
         logger.info("Initiated Loading Data");
-        utilityService.initializeCyberRiskData();
+        utilityService.loadData();
         logger.info("Data Loading Completed");
 
     }

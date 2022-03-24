@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -30,8 +31,8 @@ public class DeveloperUtilityServiceController {
     })
     @GetMapping("/developer-utility/cyberRisks")
     public ResponseEntity<List<CyberRisk>> getAllRecords () {
-        List<CyberRisk> cyberRiskList = utilityService.findCyberRiskAllRecords();
-        return new ResponseEntity<>(cyberRiskList, HttpStatus.OK);
+        List<CyberRisk> cyberRiskList = new ArrayList<>(); //utilityService.findData();
+       return new ResponseEntity<>(cyberRiskList, HttpStatus.OK);
     }
 
 }

@@ -1,0 +1,402 @@
+{
+  "nodeId" : "7fb1c9d0-80a4-4e46-81d6-5351cd321fc7",
+  "name" : "root_thread_ns",
+  "qname" : "root_thread_ns",
+  "ownedElement" : [ {
+    "nodeId" : "5833e285-7247-4cf6-a214-4ea251f48264",
+    "name" : "WSAMSuretyCertification_thread",
+    "qname" : "WSAMSuretyCertification_thread",
+    "ownedElement" : [ {
+      "nodeId" : "84c957df-c9c9-433b-9b1a-c135c4dd622a",
+      "component" : [ {
+        "nodeId" : "c0b82126-8c4e-4bb7-bed7-edd951c68cbe",
+        "complexTypeQname" : "WSAMLeftNav_Schema.SoftwareNode",
+        "roleName" : "softwareNode",
+        "isDefaultForComposition" : false,
+        "componentRelationship" : [ {
+          "nodeId" : "cb01dbeb-7040-4338-8980-bb5dddab2f63",
+          "isUserLinkable" : false,
+          "relatedComponent" : {
+            "nodeId" : "c2bfd568-94f4-49f4-8f2d-12956fa70fb8",
+            "complexTypeQname" : "WSAMSuretyCertification_Schema.NuclearCertificationTask",
+            "roleName" : "nuclearCertificationTask",
+            "isDefaultForComposition" : false,
+            "componentRelationship" : [ {
+              "nodeId" : "dfc29cc8-6f57-47a7-a70a-32484d6ecce5",
+              "isUserLinkable" : false,
+              "relatedComponent" : {
+                "nodeId" : "c925f873-97de-495d-b33d-52313b0b9cf0",
+                "complexTypeQname" : "WSAMSuretyCertification_Schema.NuclearOrganization",
+                "roleName" : "nuclearOrganization",
+                "isDefaultForComposition" : false,
+                "nodeType" : "threadconfig.Component",
+                "nodeClass" : "threadconfig.Component"
+              },
+              "relationshipQname" : "WSAMSuretyCertification_Schema.NuclearCertificationTask.submittedBy",
+              "nodeType" : "threadconfig.ComponentRelationship",
+              "nodeClass" : "threadconfig.ComponentRelationship"
+            } ],
+            "nodeType" : "threadconfig.Component",
+            "nodeClass" : "threadconfig.Component"
+          },
+          "relationshipQname" : "WSAMLeftNav_Schema.SoftwareNode.SwCertifiedBy",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        }, {
+          "nodeId" : "8962d592-228e-495b-97f2-ffd13235c449",
+          "isUserLinkable" : false,
+          "relatedComponent" : {
+            "nodeId" : "ef7fc0f3-d506-4f07-b5c9-d2227bb0bee5",
+            "complexTypeQname" : "WSAMSuretyCertification_Schema.NuclearSuretyRequirement",
+            "roleName" : "nuclearSuretyRequirement",
+            "isDefaultForComposition" : false,
+            "nodeType" : "threadconfig.Component",
+            "nodeClass" : "threadconfig.Component"
+          },
+          "relationshipQname" : "WSAMLeftNav_Schema.SoftwareNode.satisfiesSwRequirement",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, {
+        "nodeId" : "9669b12d-c870-4acb-b0f0-0f8a26df6b0a",
+        "complexTypeQname" : "WSAMLeftNav_Schema.HardwareNode",
+        "roleName" : "hardwareNode",
+        "isDefaultForComposition" : false,
+        "componentRelationship" : [ {
+          "nodeId" : "5f98f75d-082c-43c1-8a12-e1550ce42e3c",
+          "isUserLinkable" : false,
+          "relatedComponent" : "ef7fc0f3-d506-4f07-b5c9-d2227bb0bee5",
+          "relationshipQname" : "WSAMLeftNav_Schema.HardwareNode.satisfiesHwRequirement",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        }, {
+          "nodeId" : "faba017e-b462-4474-b8d4-95638eb1184e",
+          "isUserLinkable" : false,
+          "relatedComponent" : "c2bfd568-94f4-49f4-8f2d-12956fa70fb8",
+          "relationshipQname" : "WSAMLeftNav_Schema.HardwareNode.HwCertifiedBy",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, "c925f873-97de-495d-b33d-52313b0b9cf0", {
+        "nodeId" : "f581696a-7f1b-4d15-8fa9-b5133a0fbf04",
+        "complexTypeQname" : "WSAMSuretyCertification_Schema.NuclearFunction",
+        "roleName" : "nuclearFunction",
+        "isDefaultForComposition" : true,
+        "componentRelationship" : [ {
+          "nodeId" : "242ee8cc-54de-4edd-91f8-98fa6f81372b",
+          "isUserLinkable" : false,
+          "relatedComponent" : "9669b12d-c870-4acb-b0f0-0f8a26df6b0a",
+          "relationshipQname" : "WSAMSuretyCertification_Schema.NuclearFunction.allocatedToHw",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        }, {
+          "nodeId" : "4ade7304-6587-41de-aa10-3428fe836776",
+          "isUserLinkable" : false,
+          "relatedComponent" : "c0b82126-8c4e-4bb7-bed7-edd951c68cbe",
+          "relationshipQname" : "WSAMSuretyCertification_Schema.NuclearFunction.allocatedToSw",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, "c2bfd568-94f4-49f4-8f2d-12956fa70fb8", "ef7fc0f3-d506-4f07-b5c9-d2227bb0bee5" ],
+      "name" : "WSAMSuretyCertification_ThreadComp",
+      "qname" : "WSAMSuretyCertification_thread.WSAMSuretyCertification_ThreadComp",
+      "nodeType" : "threadconfig.ThreadComposition",
+      "nodeClass" : "threadconfig.ThreadComposition"
+    }, {
+      "nodeId" : "44cddd54-e7a7-4011-a0cb-7809d2834608",
+      "threadCompositionQname" : "WSAMSuretyCertification_thread.WSAMSuretyCertification_ThreadComp",
+      "modelBindingQname" : [ "WSAMSuretyCertification_mb.WSAMSuretyCertification_ModelBinding" ],
+      "nodeType" : "threadconfig.ThreadConfiguration",
+      "nodeClass" : "threadconfig.ThreadConfiguration"
+    } ],
+    "nodeType" : "schema.Namespace",
+    "nodeClass" : "schema.Namespace"
+  }, {
+    "nodeId" : "c2e8b5ba-0636-4a69-ad0e-23d07a24416d",
+    "name" : "WSAMLeftNav_Thread",
+    "qname" : "WSAMLeftNav_Thread",
+    "ownedElement" : [ {
+      "nodeId" : "59553665-7827-498d-95bd-6574ea24a251",
+      "component" : [ {
+        "nodeId" : "e034f1f1-e555-4146-b268-fa1da861bb2f",
+        "complexTypeQname" : "WSAMLeftNav_Schema.ElementNode",
+        "roleName" : "elementNode",
+        "isDefaultForComposition" : false,
+        "componentRelationship" : [ {
+          "nodeId" : "220c058e-60f9-4032-8130-8e4ab70b837c",
+          "isUserLinkable" : false,
+          "relatedComponent" : {
+            "nodeId" : "da946cc7-b8bf-4f54-9af2-f3ee8b846ccb",
+            "complexTypeQname" : "WSAMLeftNav_Schema.HardwareNode",
+            "roleName" : "hardwareNode",
+            "isDefaultForComposition" : false,
+            "nodeType" : "threadconfig.Component",
+            "nodeClass" : "threadconfig.Component"
+          },
+          "relationshipQname" : "WSAMLeftNav_Schema.ElementNode.hasHardware",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        }, {
+          "nodeId" : "ef75a999-9a58-475f-b068-732e49e9e726",
+          "isUserLinkable" : false,
+          "relatedComponent" : {
+            "nodeId" : "1e7a37af-890c-44d9-b46d-1f23f4295711",
+            "complexTypeQname" : "WSAMLeftNav_Schema.CyberNode",
+            "roleName" : "cyberNode",
+            "isDefaultForComposition" : false,
+            "nodeType" : "threadconfig.Component",
+            "nodeClass" : "threadconfig.Component"
+          },
+          "relationshipQname" : "WSAMLeftNav_Schema.ElementNode.hasSoftware",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, "da946cc7-b8bf-4f54-9af2-f3ee8b846ccb", {
+        "nodeId" : "207ae1fa-7469-45c6-96b9-0dbc99b7eb06",
+        "complexTypeQname" : "WSAMLeftNav_Schema.SystemNode",
+        "roleName" : "systemNode",
+        "isDefaultForComposition" : true,
+        "componentRelationship" : [ {
+          "nodeId" : "2a9872d4-2161-483e-ab97-aac57800ebaa",
+          "isUserLinkable" : false,
+          "relatedComponent" : {
+            "nodeId" : "3aa3978a-7a82-457f-aa00-88792f88d867",
+            "complexTypeQname" : "WSAMLeftNav_Schema.SegmentNode",
+            "roleName" : "segmentNode",
+            "isDefaultForComposition" : false,
+            "componentRelationship" : [ {
+              "nodeId" : "37ebcf3e-c91d-4f2d-a9d7-402627de1a0b",
+              "isUserLinkable" : false,
+              "relatedComponent" : "e034f1f1-e555-4146-b268-fa1da861bb2f",
+              "relationshipQname" : "WSAMLeftNav_Schema.SegmentNode.hasElement",
+              "nodeType" : "threadconfig.ComponentRelationship",
+              "nodeClass" : "threadconfig.ComponentRelationship"
+            } ],
+            "nodeType" : "threadconfig.Component",
+            "nodeClass" : "threadconfig.Component"
+          },
+          "relationshipQname" : "WSAMLeftNav_Schema.SystemNode.hasSegment",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, "1e7a37af-890c-44d9-b46d-1f23f4295711", "3aa3978a-7a82-457f-aa00-88792f88d867" ],
+      "name" : "WSAMLeftNav_ThreadComp",
+      "qname" : "WSAMLeftNav_Thread.WSAMLeftNav_ThreadComp",
+      "nodeType" : "threadconfig.ThreadComposition",
+      "nodeClass" : "threadconfig.ThreadComposition"
+    }, {
+      "nodeId" : "d7d69937-a597-47bb-8b7b-464a9c867ce6",
+      "threadCompositionQname" : "WSAMLeftNav_Thread.WSAMLeftNav_ThreadComp",
+      "modelBindingQname" : [ "WSAMLeftNav_Binding.WSAMLeftNav_ModelBinding" ],
+      "nodeType" : "threadconfig.ThreadConfiguration",
+      "nodeClass" : "threadconfig.ThreadConfiguration"
+    } ],
+    "nodeType" : "schema.Namespace",
+    "nodeClass" : "schema.Namespace"
+  }, {
+    "nodeId" : "e948d107-b3d9-4793-b598-4519baf7d06a",
+    "name" : "ModelCenter_Thread",
+    "qname" : "ModelCenter_Thread",
+    "ownedElement" : [ {
+      "nodeId" : "0fb1d9a1-eeeb-4b40-a4dd-f8038b4fe0d7",
+      "threadCompositionQname" : "ModelCenter_Thread.ModelCenter_ThreadComp",
+      "modelBindingQname" : [ "ModelCenter_Binding.ModelCenter_ModelBinding" ],
+      "nodeType" : "threadconfig.ThreadConfiguration",
+      "nodeClass" : "threadconfig.ThreadConfiguration"
+    }, {
+      "nodeId" : "441e5427-7664-4f66-818b-daabd7f138b4",
+      "component" : [ {
+        "nodeId" : "d4ef5151-f2c8-47e6-856c-478c7ef9e989",
+        "complexTypeQname" : "ModelCenter_Schema.AnalysisModel",
+        "roleName" : "analysisModel",
+        "isDefaultForComposition" : true,
+        "componentRelationship" : [ {
+          "nodeId" : "285387bb-ccb9-4618-85cc-7b556cdaf3f3",
+          "isUserLinkable" : false,
+          "relatedComponent" : {
+            "nodeId" : "c5767f32-396e-4b63-a483-ee629d83da14",
+            "complexTypeQname" : "ModelCenter_Schema.ExternalAnalysis",
+            "roleName" : "externalAnalysis",
+            "isDefaultForComposition" : false,
+            "componentRelationship" : [ {
+              "nodeId" : "fe587f53-e150-4bbb-a744-a78456439536",
+              "isUserLinkable" : false,
+              "relatedComponent" : {
+                "nodeId" : "e6bda09b-b8f7-430f-8392-a0bf932ad714",
+                "complexTypeQname" : "ModelCenter_Schema.AnalysisVariable",
+                "roleName" : "analysisVariable",
+                "isDefaultForComposition" : false,
+                "componentRelationship" : [ {
+                  "nodeId" : "6596192d-dd2b-42a8-a1da-f0392e7434ee",
+                  "isUserLinkable" : false,
+                  "relatedComponent" : {
+                    "nodeId" : "7b20b4e9-6df2-46a8-858d-8ea37ecb309d",
+                    "complexTypeQname" : "ModelCenter_Schema.AnalysisValue",
+                    "roleName" : "analysisValue",
+                    "isDefaultForComposition" : false,
+                    "componentRelationship" : [ {
+                      "nodeId" : "cd4bb607-fbe8-4bd2-84b1-2193b4509c23",
+                      "isUserLinkable" : false,
+                      "relatedComponent" : {
+                        "nodeId" : "d97af7cd-25d5-47fe-9b25-63aa714841dd",
+                        "complexTypeQname" : "ModelCenter_Schema.PropertyBasedRequirement",
+                        "roleName" : "propertyBasedRequirement",
+                        "isDefaultForComposition" : false,
+                        "nodeType" : "threadconfig.Component",
+                        "nodeClass" : "threadconfig.Component"
+                      },
+                      "relationshipQname" : "ModelCenter_Schema.AnalysisValue.satisfiesRequirement",
+                      "nodeType" : "threadconfig.ComponentRelationship",
+                      "nodeClass" : "threadconfig.ComponentRelationship"
+                    } ],
+                    "nodeType" : "threadconfig.Component",
+                    "nodeClass" : "threadconfig.Component"
+                  },
+                  "relationshipQname" : "ModelCenter_Schema.AnalysisVariable.bindsValue",
+                  "nodeType" : "threadconfig.ComponentRelationship",
+                  "nodeClass" : "threadconfig.ComponentRelationship"
+                } ],
+                "nodeType" : "threadconfig.Component",
+                "nodeClass" : "threadconfig.Component"
+              },
+              "relationshipQname" : "ModelCenter_Schema.ExternalAnalysis.usesAnalysisVariables",
+              "nodeType" : "threadconfig.ComponentRelationship",
+              "nodeClass" : "threadconfig.ComponentRelationship"
+            } ],
+            "nodeType" : "threadconfig.Component",
+            "nodeClass" : "threadconfig.Component"
+          },
+          "relationshipQname" : "ModelCenter_Schema.AnalysisModel.hasExternalAnalysis",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, "7b20b4e9-6df2-46a8-858d-8ea37ecb309d", "c5767f32-396e-4b63-a483-ee629d83da14", "d97af7cd-25d5-47fe-9b25-63aa714841dd", "e6bda09b-b8f7-430f-8392-a0bf932ad714" ],
+      "name" : "ModelCenter_ThreadComp",
+      "qname" : "ModelCenter_Thread.ModelCenter_ThreadComp",
+      "nodeType" : "threadconfig.ThreadComposition",
+      "nodeClass" : "threadconfig.ThreadComposition"
+    } ],
+    "nodeType" : "schema.Namespace",
+    "nodeClass" : "schema.Namespace"
+  }, {
+    "nodeId" : "2566ffc6-647d-46fd-a63e-634f14f146a1",
+    "name" : "WSAMCyberRisk_thread",
+    "qname" : "WSAMCyberRisk_thread",
+    "ownedElement" : [ {
+      "nodeId" : "bfa33445-3ce1-40c9-a1a3-1fe7fbb50320",
+      "component" : [ {
+        "nodeId" : "58adf663-efca-41c2-bd63-c5d51f50beb2",
+        "complexTypeQname" : "WSAMCyberRisk_Schema.Threat",
+        "roleName" : "threat",
+        "isDefaultForComposition" : false,
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, {
+        "nodeId" : "fec5f09d-4a2c-436a-a479-02741fcc9204",
+        "complexTypeQname" : "WSAMCyberRisk_Schema.Mitigation",
+        "roleName" : "mitigation",
+        "isDefaultForComposition" : false,
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, {
+        "nodeId" : "783cbf10-e993-4ce9-b445-e32e720d807a",
+        "complexTypeQname" : "WSAMCyberRisk_Schema.Vulnerability",
+        "roleName" : "vulnerability",
+        "isDefaultForComposition" : false,
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, {
+        "nodeId" : "aa02d049-349d-4ad0-8f1f-8ef57d20b496",
+        "complexTypeQname" : "WSAMCyberRisk_Schema.Control",
+        "roleName" : "control",
+        "isDefaultForComposition" : false,
+        "componentRelationship" : [ {
+          "nodeId" : "43021c60-8e01-42f0-ac04-593ab89aa92b",
+          "isUserLinkable" : false,
+          "relatedComponent" : {
+            "nodeId" : "85e7534b-39da-48c4-9884-87fe9b695432",
+            "complexTypeQname" : "WSAMCyberRisk_Schema.Risk",
+            "roleName" : "risk",
+            "isDefaultForComposition" : false,
+            "componentRelationship" : [ {
+              "nodeId" : "7bc33447-7326-4f70-881c-76eeae6dda50",
+              "isUserLinkable" : false,
+              "relatedComponent" : "fec5f09d-4a2c-436a-a479-02741fcc9204",
+              "relationshipQname" : "WSAMCyberRisk_Schema.Risk.hasMitigation",
+              "nodeType" : "threadconfig.ComponentRelationship",
+              "nodeClass" : "threadconfig.ComponentRelationship"
+            }, {
+              "nodeId" : "35c9cc96-0438-469d-aa0f-d2f93595c7a7",
+              "isUserLinkable" : false,
+              "relatedComponent" : "783cbf10-e993-4ce9-b445-e32e720d807a",
+              "relationshipQname" : "WSAMCyberRisk_Schema.Risk.hasVulnerability",
+              "nodeType" : "threadconfig.ComponentRelationship",
+              "nodeClass" : "threadconfig.ComponentRelationship"
+            }, {
+              "nodeId" : "902d44a4-daa7-4ef5-b5fc-75a5c5861165",
+              "isUserLinkable" : false,
+              "relatedComponent" : "58adf663-efca-41c2-bd63-c5d51f50beb2",
+              "relationshipQname" : "WSAMCyberRisk_Schema.Risk.hasThreat",
+              "nodeType" : "threadconfig.ComponentRelationship",
+              "nodeClass" : "threadconfig.ComponentRelationship"
+            } ],
+            "nodeType" : "threadconfig.Component",
+            "nodeClass" : "threadconfig.Component"
+          },
+          "relationshipQname" : "WSAMCyberRisk_Schema.Control.controls",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, {
+        "nodeId" : "50ba144c-d651-43f5-8f69-486a42422c83",
+        "complexTypeQname" : "WSAMLeftNav_Schema.CyberNode",
+        "roleName" : "cyberNode",
+        "isDefaultForComposition" : true,
+        "componentRelationship" : [ {
+          "nodeId" : "3b6aeec6-a89c-44c2-8a8b-e2710d7b6967",
+          "isUserLinkable" : false,
+          "relatedComponent" : "aa02d049-349d-4ad0-8f1f-8ef57d20b496",
+          "relationshipQname" : "WSAMLeftNav_Schema.CyberNode.protectedBy",
+          "nodeType" : "threadconfig.ComponentRelationship",
+          "nodeClass" : "threadconfig.ComponentRelationship"
+        } ],
+        "nodeType" : "threadconfig.Component",
+        "nodeClass" : "threadconfig.Component"
+      }, "85e7534b-39da-48c4-9884-87fe9b695432" ],
+      "name" : "WSAMCyberRisk_ThreadComp",
+      "qname" : "WSAMCyberRisk_thread.WSAMCyberRisk_ThreadComp",
+      "nodeType" : "threadconfig.ThreadComposition",
+      "nodeClass" : "threadconfig.ThreadComposition"
+    }, {
+      "nodeId" : "365d049d-ab7a-4c60-b6b6-01cef9e3f4f6",
+      "threadCompositionQname" : "WSAMCyberRisk_thread.WSAMCyberRisk_ThreadComp",
+      "modelBindingQname" : [ "WSAMCyberRisk_mb.WSAMCyberRisk_ModelBinding" ],
+      "nodeType" : "threadconfig.ThreadConfiguration",
+      "nodeClass" : "threadconfig.ThreadConfiguration"
+    } ],
+    "nodeType" : "schema.Namespace",
+    "nodeClass" : "schema.Namespace"
+  }, {
+    "nodeId" : "09fb0d6c-cb39-4ce7-af1f-55aa293d16e4",
+    "name" : "comment_thread",
+    "qname" : "comment_thread",
+    "nodeType" : "schema.Namespace",
+    "nodeClass" : "schema.Namespace"
+  } ],
+  "nodeType" : "schema.Namespace",
+  "nodeClass" : "schema.Namespace"
+}

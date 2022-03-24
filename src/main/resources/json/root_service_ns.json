@@ -1,0 +1,793 @@
+{
+  "nodeId" : "24baeefa-8afc-4c04-840c-59e2c563f776",
+  "name" : "root_service",
+  "qname" : "root_service",
+  "ownedElement" : [ {
+    "nodeId" : "0e857292-83d0-4871-b0c9-898700e05b1b",
+    "name" : "services",
+    "qname" : "services",
+    "ownedElement" : [ {
+      "nodeId" : "09dc61c0-3951-4894-bc8b-cc476fd42702",
+      "name" : "SvcCameoNavRelValidation",
+      "qname" : "services.SvcCameoNavRelValidation",
+      "nodeType" : "schema.service.Service",
+      "nodeClass" : "schema.service.Service"
+    }, {
+      "nodeId" : "7eaa2324-782a-4240-9613-e2045db643c2",
+      "name" : "SvcAsotData",
+      "qname" : "services.SvcAsotData",
+      "ownedElement" : [ {
+        "nodeId" : "2a16855d-e673-479f-b31c-fc95a09d25d3",
+        "restOperation" : "GET",
+        "name" : "get",
+        "qname" : "services.SvcAsotData.get",
+        "ownedElement" : [ {
+          "nodeId" : "fd295eea-df68-4ee4-8963-731927fadfc8",
+          "direction" : "RETURN",
+          "typeQname" : "thread.Thread",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcAsotData.get.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "5310b513-3e54-4159-84a5-62631a7f4f8b",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcAsotData.get.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "d7f9818d-f3ad-4c1c-8b6b-7dee6c3204d2",
+        "restOperation" : "POST",
+        "name" : "read",
+        "qname" : "services.SvcAsotData.read",
+        "ownedElement" : [ {
+          "nodeId" : "dba6edc0-20ae-4835-9efe-1122746a2bc1",
+          "direction" : "RETURN",
+          "typeQname" : "thread.Thread",
+          "minMulti" : 0,
+          "maxMulti" : -1,
+          "qname" : "services.SvcAsotData.read.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "58744e55-bd14-4b5c-886a-8ec2586335c7",
+          "direction" : "IN",
+          "typeQname" : "schema.query.ThreadQuery",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "threadQuery",
+          "qname" : "services.SvcAsotData.read.threadQuery",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      } ],
+      "nodeType" : "schema.service.Service",
+      "nodeClass" : "schema.service.Service"
+    }, {
+      "nodeId" : "aeaa6cdb-a8be-4103-8327-7f42266d3368",
+      "name" : "SvcNavRelValidation",
+      "qname" : "services.SvcNavRelValidation",
+      "nodeType" : "schema.service.Service",
+      "nodeClass" : "schema.service.Service"
+    }, {
+      "nodeId" : "5fc4e0c0-71d8-43c9-a015-1bd20d5b7029",
+      "name" : "SvcThreadData",
+      "qname" : "services.SvcThreadData",
+      "ownedElement" : [ {
+        "nodeId" : "e5e214dc-f933-4cde-b668-923862d50bb2",
+        "restOperation" : "POST",
+        "name" : "create",
+        "qname" : "services.SvcThreadData.create",
+        "ownedElement" : [ {
+          "nodeId" : "28165d2c-c986-4cde-9ad6-ade055d86d08",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.integer",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcThreadData.create.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "d7e5d661-8b03-4356-b88e-f310cc667a33",
+          "direction" : "IN",
+          "typeQname" : "thread.Thread",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "thread",
+          "qname" : "services.SvcThreadData.create.thread",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "ef16d015-1ad7-45ac-874b-74baaaf4aeea",
+        "restOperation" : "PATCH",
+        "name" : "update",
+        "qname" : "services.SvcThreadData.update",
+        "ownedElement" : [ {
+          "nodeId" : "e45a1bf4-048b-4d42-9231-b6e4330619af",
+          "direction" : "IN",
+          "typeQname" : "thread.Thread",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "thread",
+          "qname" : "services.SvcThreadData.update.thread",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "54c7f06f-652a-46cd-b4e5-0a201d086625",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.integer",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcThreadData.update.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "e0405fa1-0474-4706-96c7-a95025858684",
+        "restOperation" : "GET",
+        "name" : "getRefresh",
+        "qname" : "services.SvcThreadData.getRefresh",
+        "ownedElement" : [ {
+          "nodeId" : "ecb80795-c0ca-496b-84fb-c377d3467abe",
+          "direction" : "RETURN",
+          "typeQname" : "thread.Thread",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcThreadData.getRefresh.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "40745074-a005-45e6-8f1d-35c7f321333e",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcThreadData.getRefresh.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "b1e9fb23-8e05-4de7-ae91-fb5f84d9a4fb",
+        "restOperation" : "GET",
+        "name" : "get",
+        "qname" : "services.SvcThreadData.get",
+        "ownedElement" : [ {
+          "nodeId" : "40959f1a-d582-4f51-8bdf-a5442af6a09c",
+          "direction" : "RETURN",
+          "typeQname" : "thread.Thread",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcThreadData.get.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "d39544bd-880f-4273-a9d0-22c9d8031f70",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcThreadData.get.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "3f7f505c-991a-451e-98d5-b539e9bcc4a4",
+        "restOperation" : "DELETE",
+        "name" : "delete",
+        "qname" : "services.SvcThreadData.delete",
+        "ownedElement" : [ {
+          "nodeId" : "f7b1597b-fa4b-47a7-9ddf-c271ccb92941",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcThreadData.delete.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "3e9c7b18-a29f-4869-8c97-cd31a928af93",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.integer",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcThreadData.delete.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "ab768d9e-54f3-4831-abce-eafdfd321823",
+        "restOperation" : "POST",
+        "name" : "read",
+        "qname" : "services.SvcThreadData.read",
+        "ownedElement" : [ {
+          "nodeId" : "447e4d74-d94d-4270-92b4-ea8508e3cc5b",
+          "direction" : "IN",
+          "typeQname" : "schema.query.ThreadQuery",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "threadQuery",
+          "qname" : "services.SvcThreadData.read.threadQuery",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "e84b364a-0c04-453b-9539-07f030e15b36",
+          "direction" : "RETURN",
+          "typeQname" : "thread.Thread",
+          "minMulti" : 0,
+          "maxMulti" : -1,
+          "qname" : "services.SvcThreadData.read.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      } ],
+      "nodeType" : "schema.service.Service",
+      "nodeClass" : "schema.service.Service"
+    }, {
+      "nodeId" : "f56fd8ab-4f5e-4991-8c96-2a865040aa2c",
+      "name" : "SvcNodeData",
+      "qname" : "services.SvcNodeData",
+      "ownedElement" : [ {
+        "nodeId" : "5947b72b-2a65-4938-b01b-944c0be604b6",
+        "restOperation" : "GET",
+        "name" : "getRelated",
+        "qname" : "services.SvcNodeData.getRelated",
+        "ownedElement" : [ {
+          "nodeId" : "58fdc8c4-a671-4ca4-a93a-52a2474bff34",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 0,
+          "maxMulti" : -1,
+          "qname" : "services.SvcNodeData.getRelated.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "569ec365-e4f0-4091-808e-60b60aadf618",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "relationshipName",
+          "qname" : "services.SvcNodeData.getRelated.relationshipName",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "527daf45-5d7f-4e54-a093-c4d352c098d0",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcNodeData.getRelated.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "bb96d93b-60fb-4036-a749-0c956fbcd617",
+          "direction" : "IN",
+          "typeQname" : "schema.model.RelationshipDirection",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "relationshipDirection",
+          "qname" : "services.SvcNodeData.getRelated.relationshipDirection",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "4e226167-8dfc-46b0-ba3d-d8cb8626ba67",
+        "restOperation" : "GET",
+        "name" : "get",
+        "qname" : "services.SvcNodeData.get",
+        "ownedElement" : [ {
+          "nodeId" : "ec1fa86f-9685-414d-baf2-5ba368701293",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcNodeData.get.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "a6909bc1-f645-46a9-adbe-f6e8eeaa8c9c",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcNodeData.get.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "ace1f6a8-33d7-4e25-99cd-41f8f09102a2",
+        "restOperation" : "GET",
+        "name" : "getWithDepth",
+        "qname" : "services.SvcNodeData.getWithDepth",
+        "ownedElement" : [ {
+          "nodeId" : "3a1edb77-1e81-4891-8cb7-62f221e17b04",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "services.SvcNodeData.getWithDepth.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "b7948984-e2d8-4a69-9048-40e20f9db429",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcNodeData.getWithDepth.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "14ed8081-a00d-408d-ac82-f8e9c3f53aed",
+          "direction" : "IN",
+          "typeQname" : "basetypes.integer",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "depth",
+          "qname" : "services.SvcNodeData.getWithDepth.depth",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "ccf05344-8bfc-40ec-a8b9-ed1d5ad1519e",
+        "restOperation" : "DELETE",
+        "name" : "delete",
+        "qname" : "services.SvcNodeData.delete",
+        "ownedElement" : [ {
+          "nodeId" : "6dd169f1-2b49-4ff3-9009-26077d8f5020",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "nodeId",
+          "qname" : "services.SvcNodeData.delete.nodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "b8fb0054-3980-424b-8678-c6c6bbe05c11",
+        "restOperation" : "POST",
+        "name" : "createAndAttach",
+        "qname" : "services.SvcNodeData.createAndAttach",
+        "ownedElement" : [ {
+          "nodeId" : "11dff668-68b7-4796-b70d-74033cdefbc6",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "sourceNodeId",
+          "qname" : "services.SvcNodeData.createAndAttach.sourceNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "d4bcc263-1548-43d8-b49c-aef5f80ec5c4",
+          "direction" : "IN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "node",
+          "qname" : "services.SvcNodeData.createAndAttach.node",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "6b60d0ac-89ac-4f24-99dc-3c0f978420c0",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "relationshipName",
+          "qname" : "services.SvcNodeData.createAndAttach.relationshipName",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "c18b7b74-e960-4564-b6e4-6d12b97ae4d1",
+        "restOperation" : "POST",
+        "name" : "create",
+        "qname" : "services.SvcNodeData.create",
+        "ownedElement" : [ {
+          "nodeId" : "2a3f5f0f-708b-4259-840d-d9810d49baa4",
+          "direction" : "IN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "node",
+          "qname" : "services.SvcNodeData.create.node",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "9bfff7f0-4232-4720-86fd-89822299378a",
+        "restOperation" : "POST",
+        "name" : "search",
+        "qname" : "services.SvcNodeData.search",
+        "ownedElement" : [ {
+          "nodeId" : "d1f448bd-ccaf-46cc-9469-394ec7a0d1e0",
+          "direction" : "IN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "keyValues",
+          "qname" : "services.SvcNodeData.search.keyValues",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "d092571a-7ae7-405c-b03f-3e987f78b67e",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 0,
+          "maxMulti" : -1,
+          "qname" : "services.SvcNodeData.search.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "9863cc63-ad2f-4631-b00b-65469bf623c7",
+        "restOperation" : "POST",
+        "name" : "attach",
+        "qname" : "services.SvcNodeData.attach",
+        "ownedElement" : [ {
+          "nodeId" : "856cae28-b4d3-4b70-8b07-ef6214e51a2a",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "targetNodeId",
+          "qname" : "services.SvcNodeData.attach.targetNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "357c0abc-518a-4424-bf1e-6af1e17ff363",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "relationshipName",
+          "qname" : "services.SvcNodeData.attach.relationshipName",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "2a8b1030-ece1-4551-918f-13a4b0ef8125",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "sourceNodeId",
+          "qname" : "services.SvcNodeData.attach.sourceNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "f57fe3e4-8201-4044-9015-2aa98a3764a3",
+        "restOperation" : "POST",
+        "name" : "search",
+        "qname" : "services.SvcNodeData.search",
+        "ownedElement" : [ {
+          "nodeId" : "902cfad4-6c72-45c1-808b-0318d7fae299",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "searchTerms",
+          "qname" : "services.SvcNodeData.search.searchTerms",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "402f2c57-3ef8-4282-9e08-2542a29f23fd",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 0,
+          "maxMulti" : -1,
+          "qname" : "services.SvcNodeData.search.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "cf79c6eb-8239-4caf-9fa1-040b110c4b1d",
+        "restOperation" : "PATCH",
+        "name" : "update",
+        "qname" : "services.SvcNodeData.update",
+        "ownedElement" : [ {
+          "nodeId" : "bea72e31-38d7-4976-acdc-116617959612",
+          "direction" : "IN",
+          "typeQname" : "basetypes.Node",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "node",
+          "qname" : "services.SvcNodeData.update.node",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "ab12cf40-5d9e-43cc-b454-4eddeb22675f",
+        "restOperation" : "POST",
+        "name" : "detach",
+        "qname" : "services.SvcNodeData.detach",
+        "ownedElement" : [ {
+          "nodeId" : "cd069888-250e-4d30-9d97-d65a0393518e",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "relationshipName",
+          "qname" : "services.SvcNodeData.detach.relationshipName",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "eb24ee93-9cc1-41fc-88d1-03283a605488",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "sourceNodeId",
+          "qname" : "services.SvcNodeData.detach.sourceNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "ba814fed-494e-475e-ac52-3dd02b7db67f",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "targetNodeId",
+          "qname" : "services.SvcNodeData.detach.targetNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      } ],
+      "nodeType" : "schema.service.Service",
+      "nodeClass" : "schema.service.Service"
+    } ],
+    "nodeType" : "schema.Namespace",
+    "nodeClass" : "schema.Namespace"
+  }, {
+    "nodeId" : "f14a08cc-73ac-419e-b07d-950315294243",
+    "name" : "ucp_services",
+    "qname" : "ucp_services",
+    "ownedElement" : [ {
+      "nodeId" : "1d40cb73-768e-4c25-adf7-373b9a4b92fe",
+      "name" : "SvcUniversalCommenting",
+      "qname" : "ucp_services.SvcUniversalCommenting",
+      "ownedElement" : [ {
+        "nodeId" : "c5a99d55-cae7-4871-8af5-4966be87c708",
+        "restOperation" : "POST",
+        "name" : "addReply",
+        "qname" : "ucp_services.SvcUniversalCommenting.addReply",
+        "ownedElement" : [ {
+          "nodeId" : "d8e17598-a70a-4e90-a41d-e26bd1bdb514",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.integer",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "ucp_services.SvcUniversalCommenting.addReply.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "cb2ba4e4-6c99-4644-ab95-e0dc98bd1b2d",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "commentNodeId",
+          "qname" : "ucp_services.SvcUniversalCommenting.addReply.commentNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "325f5c81-2fdd-4a3f-afc3-6e206884dd23",
+          "direction" : "IN",
+          "typeQname" : "ucp.UCPComment",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "reply",
+          "qname" : "ucp_services.SvcUniversalCommenting.addReply.reply",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "ba216d51-6c2a-4045-bed5-ec202e0ca48d",
+        "restOperation" : "PATCH",
+        "name" : "updateComment",
+        "qname" : "ucp_services.SvcUniversalCommenting.updateComment",
+        "ownedElement" : [ {
+          "nodeId" : "45c96ef6-8be1-4936-bedc-ca337323704e",
+          "direction" : "IN",
+          "typeQname" : "ucp.UCPComment",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "updatedComment",
+          "qname" : "ucp_services.SvcUniversalCommenting.updateComment.updatedComment",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "021798a2-1861-4874-a594-29585d5411cd",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.integer",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "ucp_services.SvcUniversalCommenting.updateComment.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "7ba81798-d10d-47c3-9d67-ed6613348120",
+        "restOperation" : "GET",
+        "name" : "getCommentsWithReplies",
+        "qname" : "ucp_services.SvcUniversalCommenting.getCommentsWithReplies",
+        "ownedElement" : [ {
+          "nodeId" : "a8a3d761-86cc-48e1-b100-6e5d94580451",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "artifactNodeId",
+          "qname" : "ucp_services.SvcUniversalCommenting.getCommentsWithReplies.artifactNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "63878c94-05b9-4ba1-bb31-2b09759f833c",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.NodeList",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "ucp_services.SvcUniversalCommenting.getCommentsWithReplies.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "a4c34547-4719-4b30-abc7-9d07b232c116",
+        "restOperation" : "POST",
+        "name" : "addComment",
+        "qname" : "ucp_services.SvcUniversalCommenting.addComment",
+        "ownedElement" : [ {
+          "nodeId" : "739cce8f-09a9-48e2-8caa-a7b0b1a8a69b",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "artifactNodeId",
+          "qname" : "ucp_services.SvcUniversalCommenting.addComment.artifactNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "76e88506-3bd6-4217-8163-5c3622ef42f6",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.integer",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "ucp_services.SvcUniversalCommenting.addComment.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "b2020713-0fab-4915-ad6f-75e8bf400fe4",
+          "direction" : "IN",
+          "typeQname" : "ucp.UCPComment",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "comment",
+          "qname" : "ucp_services.SvcUniversalCommenting.addComment.comment",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "1b5c8ce3-66a0-458b-8fbe-319efd31fbb7",
+        "restOperation" : "GET",
+        "name" : "getComments",
+        "qname" : "ucp_services.SvcUniversalCommenting.getComments",
+        "ownedElement" : [ {
+          "nodeId" : "946a955b-980b-4271-91bc-4256ea4ade8c",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.NodeList",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "ucp_services.SvcUniversalCommenting.getComments.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "7db8e105-d535-4efc-8881-01441deb5596",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "artifactNodeId",
+          "qname" : "ucp_services.SvcUniversalCommenting.getComments.artifactNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      }, {
+        "nodeId" : "f0064916-eded-43c4-acf1-f7aab7b5b74d",
+        "restOperation" : "GET",
+        "name" : "getReplies",
+        "qname" : "ucp_services.SvcUniversalCommenting.getReplies",
+        "ownedElement" : [ {
+          "nodeId" : "846863a6-3182-4879-8fb5-98751c66f2e9",
+          "direction" : "RETURN",
+          "typeQname" : "basetypes.NodeList",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "qname" : "ucp_services.SvcUniversalCommenting.getReplies.",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        }, {
+          "nodeId" : "51faa3d0-46dd-44cb-8f4d-48ecc26ffc02",
+          "direction" : "IN",
+          "typeQname" : "basetypes.string",
+          "minMulti" : 1,
+          "maxMulti" : 1,
+          "name" : "commentNodeId",
+          "qname" : "ucp_services.SvcUniversalCommenting.getReplies.commentNodeId",
+          "nodeType" : "schema.service.Parameter",
+          "nodeClass" : "schema.service.Parameter"
+        } ],
+        "nodeType" : "schema.service.Operation",
+        "nodeClass" : "schema.service.Operation"
+      } ],
+      "nodeType" : "schema.service.Service",
+      "nodeClass" : "schema.service.Service"
+    } ],
+    "nodeType" : "schema.Namespace",
+    "nodeClass" : "schema.Namespace"
+  } ],
+  "nodeType" : "schema.Namespace",
+  "nodeClass" : "schema.Namespace"
+}

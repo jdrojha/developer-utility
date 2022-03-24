@@ -6,7 +6,5 @@ import java.util.List;
 
 public interface UtilityService {
 
-    public List<CyberRisk> findCyberRiskAllRecords();
-
-    void initializeCyberRiskData();
+    void loadData();
 }
