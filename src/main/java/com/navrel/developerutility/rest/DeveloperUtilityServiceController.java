@@ -28,9 +28,9 @@ public class DeveloperUtilityServiceController {
             @io.swagger.annotations.ApiResponse(code = 401, message = "Due to security constraints, your access request cannot be authorized"),
             @io.swagger.annotations.ApiResponse(code = 500, message = "The server is down. Please bear with us."),
     })
-    @GetMapping("/developer-utility/cyberRisks")
-    public ResponseEntity<List<CyberRisk>> getAllRecords () {
-        List<CyberRisk> cyberRiskList = utilityService.findCyberRiskAllRecords();
+    @GetMapping("/developer-utility/findDataFromMemory")
+    public ResponseEntity<List<Object>> getAllRecords () {
+        List<Object> cyberRiskList = utilityService.findDataFromMemory();
         return new ResponseEntity<>(cyberRiskList, HttpStatus.OK);
     }
 

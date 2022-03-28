@@ -22,7 +22,7 @@ public class DevelopUtilityStartupRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         logger.info("Initiated Loading Data");
-        utilityService.initializeCyberRiskData();
+        utilityService.loadDataFromMemory();
         logger.info("Data Loading Completed");
 
     }
