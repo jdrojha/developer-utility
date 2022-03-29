@@ -43,13 +43,13 @@
             <version>2.11.4</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.tinkerpop</groupId>
-            <artifactId>gremlin-driver</artifactId>
-            <version>3.5.2</version>
+            <groupId>org.janusgraph</groupId>
+            <artifactId>janusgraph-driver</artifactId>
+            <version>0.6.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tinkerpop</groupId>
-            <artifactId>gremlin-server</artifactId>
+            <artifactId>gremlin-driver</artifactId>
             <version>3.5.2</version>
         </dependency>
         <dependency>
@@ -58,18 +58,8 @@
             <version>0.6.1</version>
         </dependency>
         <dependency>
-            <artifactId>janusgraph-cql</artifactId>
             <groupId>org.janusgraph</groupId>
-            <version>0.6.1</version>
-        </dependency>
-        <dependency>
-            <artifactId>janusgraph-driver</artifactId>
-            <groupId>org.janusgraph</groupId>
-            <version>0.6.1</version>
-        </dependency>
-        <dependency>
-            <artifactId>janusgraph-es</artifactId>
-            <groupId>org.janusgraph</groupId>
+            <artifactId>janusgraph-inmemory</artifactId>
             <version>0.6.1</version>
         </dependency>
     </dependencies>
